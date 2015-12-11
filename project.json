@@ -1,0 +1,10 @@
+{
+    "name": "pro6",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "pro6.xml",
+    "author": "Flame-Burner",
+    "minimum_firmware_version": 42
+}
