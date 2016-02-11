@@ -35,7 +35,7 @@
           <block type="oled_cleardisplay" id="321">
             <next>
               <block type="oled_drawtext" id="330">
-                <field name="TEXT">Get rekt</field>
+                <field name="TEXT">I made it to the MAV</field>
                 <next>
                   <block type="oled_setcursor" id="346" inline="true">
                     <value name="STARTX">
@@ -48,6 +48,9 @@
                         <field name="NUM">40</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="movement_stop" id="387"></block>
+                    </next>
                   </block>
                 </next>
               </block>
