@@ -35,7 +35,7 @@
           <block type="oled_cleardisplay" id="321">
             <next>
               <block type="oled_drawtext" id="330">
-                <field name="TEXT">I made it to the MAV</field>
+                <field name="TEXT">I made it to the </field>
                 <next>
                   <block type="oled_setcursor" id="346" inline="true">
                     <value name="STARTX">
@@ -50,7 +50,7 @@
                     </value>
                     <next>
                       <block type="oled_drawtext" id="400">
-                        <field name="TEXT">Get Rekt Pranav</field>
+                        <field name="TEXT">Schiaperalli</field>
                         <next>
                           <block type="oled_setcursor" id="401" inline="true">
                             <value name="STARTX">
@@ -64,7 +64,26 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_stop" id="387"></block>
+                              <block type="oled_drawtext" id="404">
+                                <field name="TEXT">Crater</field>
+                                <next>
+                                  <block type="oled_setcursor" id="405" inline="true">
+                                    <value name="STARTX">
+                                      <block type="math_number" id="406">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <value name="STARTY">
+                                      <block type="math_number" id="407">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="387"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
