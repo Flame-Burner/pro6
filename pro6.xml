@@ -1,51 +1,60 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="67" inline="true" x="51" y="-170">
-    <value name="TIMES">
-      <block type="math_number" id="96">
-        <field name="NUM">3</field>
+  <block type="controls_whileUntil" id="268" inline="false" x="-38" y="-139">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="275">
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="10">
-        <next>
-          <block type="robot_delay" id="12" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="19">
-                <field name="NUM">1500</field>
+      <block type="controls_if" id="261" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="282" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="289">
+                <field name="LIGHT">YELLOW</field>
               </block>
             </value>
+            <value name="B">
+              <block type="math_number" id="354">
+                <field name="NUM">20</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_forward" id="311">
             <next>
-              <block type="movement_stutter" id="120">
+              <block type="oled_cleardisplay" id="320"></block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="oled_cleardisplay" id="321">
+            <next>
+              <block type="oled_drawtext" id="330">
+                <field name="TEXT">Get rekt</field>
                 <next>
-                  <block type="robot_delay" id="131" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="138">
-                        <field name="NUM">1000</field>
+                  <block type="oled_setcursor" id="346" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="355">
+                        <field name="NUM">10</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="movement_left" id="163">
-                        <next>
-                          <block type="robot_delay" id="174" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="181">
-                                <field name="NUM">1500</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
+                    <value name="STARTY">
+                      <block type="math_number" id="356">
+                        <field name="NUM">40</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
     </statement>
-    <next>
-      <block type="movement_stop" id="43"></block>
-    </next>
   </block>
 </xml>
