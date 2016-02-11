@@ -49,7 +49,26 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="387"></block>
+                      <block type="oled_drawtext" id="400">
+                        <field name="TEXT">Get Rekt Pranav</field>
+                        <next>
+                          <block type="oled_setcursor" id="401" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="402">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="403">
+                                <field name="NUM">20</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stop" id="387"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
