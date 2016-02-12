@@ -34,8 +34,8 @@
         <statement name="ELSE">
           <block type="oled_cleardisplay" id="9">
             <next>
-              <block type="oled_drawtext" id="10">
-                <field name="TEXT">I made it to the </field>
+              <block type="oled_drawtext" id="18">
+                <field name="TEXT">Crater</field>
                 <next>
                   <block type="oled_setcursor" id="11" inline="true">
                     <value name="STARTX">
@@ -50,7 +50,7 @@
                     </value>
                     <next>
                       <block type="oled_drawtext" id="14">
-                        <field name="TEXT">Schiaperalli</field>
+                        <field name="TEXT">Schiaperalli </field>
                         <next>
                           <block type="oled_setcursor" id="15" inline="true">
                             <value name="STARTX">
@@ -64,8 +64,8 @@
                               </block>
                             </value>
                             <next>
-                              <block type="oled_drawtext" id="18">
-                                <field name="TEXT">Crater</field>
+                              <block type="oled_drawtext" id="10">
+                                <field name="TEXT">I made it to the </field>
                                 <next>
                                   <block type="oled_setcursor" id="19" inline="true">
                                     <value name="STARTX">
