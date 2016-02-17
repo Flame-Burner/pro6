@@ -82,7 +82,7 @@
                                     </value>
                                     <next>
                                       <block type="oled_drawtext" id="14">
-                                        <field name="TEXT">Crater</field>
+                                        <field name="TEXT">Crater!!!</field>
                                         <next>
                                           <block type="oled_setcursor" id="15" inline="true">
                                             <value name="STARTX">
